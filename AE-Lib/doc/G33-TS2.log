@@ -1,0 +1,72 @@
+G33-TS2: START
+G33-TS2: Task1 is being hit.
+G33-TS2: Adding tasks 2 and 3
+G33-TS2-LOG: Test[0]-[0]: .
+G33-TS2-LOG: Test[0]-[0]: result = 1.
+G33-TS2-LOG: Test[0]-[1]: .
+G33-TS2-LOG: Test[0]-[1]: result = 1.
+G33-TS2: Yielding control until they finish.
+G33-TS2: Waiting on the other 2 tasks to finish.
+G33-TS2-LOG: Test[0]-[2]: .
+G33-TS2-LOG: Test[0]-[2]: result = 1.
+G33-TS2: Waiting for the 6th fibonacci number
+G33-TS2-LOG: Test[0]-[3]: .
+G33-TS2-LOG: Test[0]-[3]: result = 1.
+G33-TS2: Did a fibonacci round
+G33-TS2-LOG: Test[0]-[4]: .
+G33-TS2-LOG: Test[0]-[4]: result = 1.
+G33-TS2: Waiting on the other 2 tasks to finish.
+G33-TS2-LOG: Test[0]-[5]: .
+G33-TS2-LOG: Test[0]-[5]: result = 1.
+G33-TS2: Waiting for the 6th fibonacci number
+G33-TS2-LOG: Test[0]-[6]: .
+G33-TS2-LOG: Test[0]-[6]: result = 1.
+G33-TS2: Did a fibonacci round
+G33-TS2-LOG: Test[0]-[7]: .
+G33-TS2-LOG: Test[0]-[7]: result = 1.
+G33-TS2: Waiting on the other 2 tasks to finish.
+G33-TS2-LOG: Test[0]-[8]: .
+G33-TS2-LOG: Test[0]-[8]: result = 1.
+G33-TS2: Waiting for the 6th fibonacci number
+G33-TS2-LOG: Test[0]-[9]: .
+G33-TS2-LOG: Test[0]-[9]: result = 1.
+G33-TS2: Did a fibonacci round
+G33-TS2-LOG: Test[0]-[10]: .
+G33-TS2-LOG: Test[0]-[10]: result = 1.
+G33-TS2: Waiting on the other 2 tasks to finish.
+G33-TS2-LOG: Test[0]-[11]: .
+G33-TS2-LOG: Test[0]-[11]: result = 1.
+G33-TS2: Waiting for the 6th fibonacci number
+G33-TS2-LOG: Test[0]-[12]: .
+G33-TS2-LOG: Test[0]-[12]: result = 1.
+G33-TS2: Did a fibonacci round
+G33-TS2-LOG: Test[0]-[13]: .
+G33-TS2-LOG: Test[0]-[13]: result = 1.
+G33-TS2: Waiting on the other 2 tasks to finish.
+G33-TS2-LOG: Test[0]-[14]: .
+G33-TS2-LOG: Test[0]-[14]: result = 1.
+G33-TS2: Waiting for the 6th fibonacci number
+G33-TS2-LOG: Test[0]-[15]: .
+G33-TS2-LOG: Test[0]-[15]: result = 1.
+G33-TS2: Did a fibonacci round
+G33-TS2-LOG: Test[0]-[16]: .
+G33-TS2-LOG: Test[0]-[16]: result = 1.
+G33-TS2: Waiting on the other 2 tasks to finish.
+G33-TS2-LOG: Test[0]-[17]: .
+G33-TS2-LOG: Test[0]-[17]: result = 1.
+G33-TS2: Waiting for the 6th fibonacci number
+G33-TS2-LOG: Test[0]-[18]: .
+G33-TS2-LOG: Test[0]-[18]: result = 1.
+G33-TS2: Waiting on the other 2 tasks to finish.
+G33-TS2-LOG: Test[0]-[19]: .
+G33-TS2-LOG: Test[0]-[19]: result = 1.
+G33-TS2: The 6th fibb number is 8.
+G33-TS2: The 2 other tasks ran until completion.
+G33-TS2-LOG: Test[0]-[20]: .
+G33-TS2-LOG: Test[0]-[20]: result = 1.
+G33-TS2: FINISHED
+G33-TS2-LOG: Test 0: 21/21 PASSED. Expected = 0x1FFFFF, result = 0x1FFFFF
+G33-TS2: 1/1 test function(s) COMPLETED.
+G33-TS2: 21/21 tests PASSED.
+G33-TS2: 0/21 tests FAILED.
+G33-TS2: END

@@ -1,0 +1,61 @@
+G33-TS3: START
+G33-TS3-LOG: Test[0]-[0]: attempting to create a HIGH prio task that runs test1 function.
+G33-TS3-LOG: Test[0]-[0]: result = 1.
+G33-TS3-LOG: Test[0]-[1]: testing tsk_ls to check if we created the max number of tasks.
+G33-TS3-LOG: Test[0]-[1]: result = 1.
+G33-TS3-LOG: Test[0]-[2]: attemping to create a HIGH prio task that runs test1 function - SHOULD EXCEED MAX NUM OF TASKS.
+G33-TS3-LOG: Test[0]-[2]: result = 1.
+G33-TS3-LOG: Test[0]-[3]: setting prio of task[2] -> HIGH, and also testing tsk_get to verify that the prio of task[2] is HIGH.
+G33-TS3-LOG: Test[0]-[3]: result = 1.
+G33-TS3-LOG: Test[0]-[4]: task[1] yielded a while ago, we are back at task[1] now. Will tsk_get verify this?.
+G33-TS3-LOG: Test[0]-[4]: result = 1.
+G33-TS3-LOG: Test[0]-[5]: testing tsk_ls to check if task[1] is the only task running right now.
+G33-TS3-LOG: Test[0]-[5]: result = 1.
+G33-TS3-LOG: Test[0]-[6]: creating a HIGH prio task that runs test1 function.
+G33-TS3-LOG: Test[0]-[6]: result = 1.
+G33-TS3-LOG: Test[0]-[7]: attemping to create a LOWEST prio task that runs test1 function - SHOULD EXCEED MAX NUM OF TASKS.
+G33-TS3-LOG: Test[0]-[7]: result = 1.
+G33-TS3-LOG: Test[0]-[8]: testing tsk_ls to check if we created the max number of tasks.
+G33-TS3-LOG: Test[0]-[8]: result = 1.
+G33-TS3-LOG: Test[0]-[9]: priveleged task attempting to set prio of a task, passing invalid prio.
+G33-TS3-LOG: Test[0]-[9]: result = 1.
+G33-TS3-LOG: Test[0]-[10]: task[1] yielded a while ago, we are back at task[1] now. Will tsk_get verify this?.
+G33-TS3-LOG: Test[0]-[10]: result = 1.
+G33-TS3-LOG: Test[0]-[11]: setting prio of task that doesn't exist.
+G33-TS3-LOG: Test[0]-[11]: result = 1.
+G33-TS3-LOG: Test[0]-[12]: testing tsk_ls to check if task[1] is the only task running right now.
+G33-TS3-LOG: Test[0]-[12]: result = 1.
+G33-TS3-LOG: Test[0]-[13]: creating a LOWEST prio task that runs task3 function.
+G33-TS3-LOG: Test[0]-[13]: result = 1.
+G33-TS3-LOG: Test[0]-[14]: creating a MEDIUM prio task that runs task2 function.
+G33-TS3-LOG: Test[0]-[14]: result = 1.
+G33-TS3-LOG2: TID = 3, task2: entering
+G33-TS3-LOG: Test[0]-[15]: checking current # of tasks, should be 3.
+G33-TS3-LOG: Test[0]-[15]: result = 1.
+G33-TS3-LOG: Test[0]-[16]: current t_id should == task[3].
+G33-TS3-LOG: Test[0]-[16]: result = 1.
+G33-TS3-LOG: Test[0]-[17]: checking current # of tasks, should be 3.
+G33-TS3-LOG: Test[0]-[17]: result = 1.
+G33-TS3-LOG: Test[0]-[18]: unprivileged task setting prio of another unpriveleged task - should fail.
+G33-TS3-LOG: Test[0]-[18]: result = 1.
+G33-TS3-LOG: Test[0]-[19]: getinfo with bad buffer - should fail.
+G33-TS3-LOG: Test[0]-[19]: result = 1.
+G33-TS3-LOG: Test[0]-[20]: task[3] will yield - nothing should happen.
+G33-TS3-LOG: Test[0]-[20]: result = 1.
+G33-TS3-LOG2: TID = 2, task3: entering
+G33-TS3-LOG: Test[0]-[21]: getinfo on dormant task - nothing should happen.
+G33-TS3-LOG: Test[0]-[21]: result = 1.
+G33-TS3-LOG: Test[0]-[22]: creating a INVALID prio task that runs task1 function.
+G33-TS3-LOG: Test[0]-[22]: result = 1.
+G33-TS3-LOG: Test[0]-[23]: calling tsk_LS with a count = 0.
+G33-TS3-LOG: Test[0]-[23]: result = 1.
+G33-TS3-LOG: Test[0]-[24]: calling tsk_ls with a NULL buffer.
+G33-TS3-LOG: Test[0]-[24]: result = 1.
+G33-TS3-LOG: Test[0]-[25]: checking current # of tasks, should be 2.
+G33-TS3-LOG: Test[0]-[25]: result = 1.
+G33-TS3: FINISHED
+G33-TS3-LOG: Test 0: 26/26 PASSED. Expected = 0x3FFFFFF, result = 0x3FFFFFF
+G33-TS3: 1/1 test function(s) COMPLETED.
+G33-TS3: 26/26 tests PASSED.
+G33-TS3: 0/26 tests FAILED.
+G33-TS3: END

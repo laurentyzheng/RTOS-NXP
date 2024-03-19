@@ -1,0 +1,17 @@
+G33-TS5: START
+G33-TS5-LOG: TID = 1, task1: entering
+G33-TS5-LOG: Test[0]-[0]: task1: testing mbx_create.
+G33-TS5-LOG: Test[0]-[0]: result = 1.
+G33-TS5-LOG: Test[0]-[1]: task1: Sending to itself without mailbox created.
+G33-TS5-LOG: Test[0]-[1]: result = 1.
+G33-TS5-LOG: Test[0]-[2]: task1: Create mailbox and see if it exists.
+G33-TS5-LOG: Test[0]-[2]: result = 1.
+G33-TS5-LOG: Test[0]-[3]: task1: Sending to itself with mailbox created.
+G33-TS5-LOG: Test[0]-[3]: result = 1.
+G33-TS5-LOG: TID = 1, task1: exiting
+G33-TS5: FINISHED
+G33-TS5-LOG: Test 0: 4/4 PASSED. Expected = 0xF, result = 0xF
+G33-TS5: 1/1 test function(s) COMPLETED.
+G33-TS5: 4/4 tests PASSED.
+G33-TS5: 0/4 tests FAILED.
+G33-TS5: END

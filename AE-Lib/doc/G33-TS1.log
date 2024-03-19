@@ -1,0 +1,97 @@
+G33-TS1: START
+G33-TS1-LOG2: priv_task1: basic memory test on IRAM2
+G33-TS1-LOG : Test[0]-[0]: G33-TS1: Begin basic test
+.
+G33-TS1-LOG : Test[0]-[0]: result = 1.
+G33-TS1-LOG : Test[0]-[1]: G33-TS1: Allocating 10 items of size 32, 128 in each pool.
+.
+G33-TS1-LOG : Test[0]-[1]: result = 1.
+G33-TS1-LOG : Test[0]-[2]: G33-TS1: Checking if they are allocated.
+.
+G33-TS1-LOG : Test[0]-[2]: result = 1.
+G33-TS1-LOG : Test[0]-[3]: G33-TS1: Checking for duplicate addresses.
+.
+G33-TS1-LOG : Test[0]-[3]: result = 1.
+G33-TS1-LOG : Test[0]-[4]: G33-TS1: Deallocating.
+.
+G33-TS1-LOG : Test[0]-[4]: result = 1.
+G33-TS1-LOG : Test[0]-[5]: G33-TS1: End basic test
+.
+G33-TS1-LOG : Test[0]-[5]: result = 1.
+G33-TS1-LOG : Test[1]-[0]: G33-TS1: Begin robust test
+.
+G33-TS1-LOG : Test[1]-[0]: result = 1.
+G33-TS1-LOG : Test[1]-[1]: G33-TS1: Was able to allocate and deallocate 4096 times successfully.
+.
+G33-TS1-LOG : Test[1]-[1]: result = 1.
+G33-TS1-LOG : Test[1]-[2]: G33-TS1: Successfully maintained 32 memory blocks (at once) in mem1.
+.
+G33-TS1-LOG : Test[1]-[2]: result = 1.
+G33-TS1-LOG : Test[1]-[3]: G33-TS1: Successfully maintained 128 blocks of 256 at once in mem2.
+.
+G33-TS1-LOG : Test[1]-[3]: result = 1.
+G33-TS1-LOG : Test[1]-[4]: G33-TS1: Successfully allocated huge blocks of mem 4096 times.
+.
+G33-TS1-LOG : Test[1]-[4]: result = 1.
+G33-TS1-LOG : Test[1]-[5]: G33-TS1: Successfully allocated huge blocks of mem 4096 times (mem2).
+.
+G33-TS1-LOG : Test[1]-[5]: result = 1.
+G33-TS1-LOG : Test[1]-[6]: G33-TS1: End robust test.
+.
+G33-TS1-LOG : Test[1]-[6]: result = 1.
+G33-TS1-LOG : Test[2]-[0]: G33-TS1: Begin behavior test.
+.
+G33-TS1-LOG : Test[2]-[0]: result = 1.
+G33-TS1-LOG : Test[2]-[1]: G33-TS1: Allocating 32 bytes.
+.
+G33-TS1-LOG : Test[2]-[1]: result = 1.
+G33-TS1-LOG : Test[2]-[2]: G33-TS1: Standard behavior does not change errno, correct.
+.
+G33-TS1-LOG : Test[2]-[2]: result = 1.
+G33-TS1-LOG : Test[2]-[3]: G33-TS1: Attempting to allocate 0x500, 0x250, then 0x500.
+.
+G33-TS1-LOG : Test[2]-[3]: result = 1.
+G33-TS1-LOG : Test[2]-[4]: G33-TS1: mem_alloc correctly returned NULL AND errno was set correctly.
+.
+G33-TS1-LOG : Test[2]-[4]: result = 1.
+G33-TS1-LOG : Test[2]-[5]: G33-TS1: Attempting to allocate 1000000 bytes.
+.
+G33-TS1-LOG : Test[2]-[5]: result = 1.
+G33-TS1-LOG : Test[2]-[6]: G33-TS1: mem_alloc returned NULL and errno was set correctly.
+.
+G33-TS1-LOG : Test[2]-[6]: result = 1.
+G33-TS1-LOG : Test[2]-[7]: G33-TS1: Attempting to allocate 0 bytes.
+.
+G33-TS1-LOG : Test[2]-[7]: result = 1.
+G33-TS1-LOG : Test[2]-[8]: G33-TS1: mem_alloc returned NULL and errno was not set, correct.
+.
+G33-TS1-LOG : Test[2]-[8]: result = 1.
+G33-TS1-LOG : Test[2]-[9]: G33-TS1: Attempting to dealloc an out of range address.
+.
+G33-TS1-LOG : Test[2]-[9]: result = 1.
+G33-TS1-LOG : Test[2]-[10]: G33-TS1: mem_dealloc returned -1 and set errno correctly.
+.
+G33-TS1-LOG : Test[2]-[10]: result = 1.
+G33-TS1-LOG : Test[2]-[11]: G33-TS1: Attempting to dealloc something in iram1 from mem2_dealloc.
+.
+G33-TS1-LOG : Test[2]-[11]: result = 1.
+G33-TS1-LOG : Test[2]-[12]: G33-TS1: mem2_dealloc treated the address as out of bounds. Correct.
+.
+G33-TS1-LOG : Test[2]-[12]: result = 1.
+G33-TS1-LOG : Test[2]-[13]: G33-TS1: Attempting to dealloc in iram2 from mem_dealloc.
+.
+G33-TS1-LOG : Test[2]-[13]: result = 1.
+G33-TS1-LOG : Test[2]-[14]: G33-TS1: mem_dealloc treated the address as out of bounds. Correct.
+.
+G33-TS1-LOG : Test[2]-[14]: result = 1.
+G33-TS1-LOG : Test[2]-[15]: G33-TS1: End behavior test.
+.
+G33-TS1-LOG : Test[2]-[15]: result = 1.
+G33-TS1: FINISHED
+G33-TS1-LOG : Test 0: 6/6 PASSED. Expected = 0x3F, result = 0x3F
+G33-TS1-LOG : Test 1: 7/7 PASSED. Expected = 0x7F, result = 0x7F
+G33-TS1-LOG : Test 2: 16/16 PASSED. Expected = 0xFFFF, result = 0xFFFF
+G33-TS1: 3/3 test function(s) COMPLETED.
+G33-TS1: 29/29 tests PASSED.
+G33-TS1: 0/29 tests FAILED.
+G33-TS1: END

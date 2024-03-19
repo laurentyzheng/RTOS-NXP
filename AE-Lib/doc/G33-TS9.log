@@ -1,0 +1,51 @@
+G33-TS9: START
+G33-TS9-LOG: Test[0]-[0]: task1: creatd task2.
+G33-TS9-LOG: Test[0]-[0]: result = 1.
+G33-TS9-LOG: Test[0]-[1]: task1: Try to updated to real-time with an invalid period and fail.
+G33-TS9-LOG: Test[0]-[1]: result = 1.
+G33-TS9-LOG: Test[0]-[2]: task1: Udated to RT.
+G33-TS9-LOG: Test[0]-[2]: result = 1.
+task1: DELAY for 2 * 10 ^ 8 instructions
+task1: Suspending. x1
+G33-TS9-LOG: TID = 2, task2: entering
+G33-TS9-LOG: Test[0]-[3]: task2: Updated to real-time with period 3s.
+G33-TS9-LOG: Test[0]-[3]: result = 1.
+task1: DELAY for 10 ^ 8 instructions
+task2: Suspending x1
+G33-TS9-LOG: Test[0]-[4]: task2: Returning x1.
+G33-TS9-LOG: Test[0]-[4]: result = 1.
+task1: DELAY for 10 ^ 8 instructions
+task2: Suspending x2
+G33-TS9-LOG: Test[0]-[5]: task1: Returned x1.
+G33-TS9-LOG: Test[0]-[5]: result = 1.
+task1: DELAY for 2 * 10 ^ 8 instructions
+task1: Suspending x2
+G33-TS9-LOG: Test[0]-[6]: task2: Returning x2.
+G33-TS9-LOG: Test[0]-[6]: result = 1.
+task1: DELAY for 10 ^ 8 instructions
+task2: Suspending x3
+G33-TS9-LOG: Test[0]-[7]: task1: Returned x2.
+G33-TS9-LOG: Test[0]-[7]: result = 1.
+task1: DELAY for 2 * 10 ^ 8 instructions
+G33-TS9-LOG: Test[0]-[8]: task2: Returning x3.
+G33-TS9-LOG: Test[0]-[8]: result = 1.
+task1: DELAY for 10 ^ 8 instructions
+task2: Suspending x4
+task1: Suspending x3
+G33-TS9-LOG: Test[0]-[9]: task2: Returning x4.
+G33-TS9-LOG: Test[0]-[9]: result = 1.
+task1: DELAY for 10 ^ 8 instructions
+G33-TS9-LOG2: TID = 2, task2: exited
+G33-TS9-LOG: Test[0]-[10]: task1: Returned x3.
+G33-TS9-LOG: Test[0]-[10]: result = 1.
+task1: DELAY for 2 * 10 ^ 8 instructions
+expected order = 2121221, actual order = 2121221
+G33-TS9-LOG: Test[0]-[11]: Checking final order..
+G33-TS9-LOG: Test[0]-[11]: result = 1.
+G33-TS9-LOG: TID = 1, task1: exiting
+G33-TS9: FINISHED
+G33-TS9-LOG: Test 0: 12/12 PASSED. Expected = 0xFFF, result = 0xFFF
+G33-TS9: 1/1 test function(s) COMPLETED.
+G33-TS9: 12/12 tests PASSED.
+G33-TS9: 0/12 tests FAILED.
+G33-TS9: END

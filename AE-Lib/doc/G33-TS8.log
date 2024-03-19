@@ -1,0 +1,22 @@
+G33-TS2: Creating 8 other tasks and exiting from each a large number of times.
+G33-TS2-LOG: Test[0]-[0]: .
+G33-TS2-LOG: Test[0]-[0]: result = 1.
+G33-TS2: Creating 8 tasks that yield for a long time each.
+G33-TS2: tsk_ls should return 10: 10.
+G33-TS2-LOG: Test[0]-[1]: .
+G33-TS2-LOG: Test[0]-[1]: result = 1.
+G33-TS2: tsk_ls should return 2: 2.
+G33-TS2-LOG: Test[0]-[2]: .
+G33-TS2-LOG: Test[0]-[2]: result = 1.
+G33-TS2: Creating a HIGH priority task a large number of times.
+G33-TS2-LOG: Test[0]-[3]: .
+G33-TS2-LOG: Test[0]-[3]: result = 1.
+G33-TS2: Creating MEDIUM priority tasks and changing them to HIGH.
+G33-TS2-LOG: Test[0]-[4]: .
+G33-TS2-LOG: Test[0]-[4]: result = 1.
+G33-TS2: FINISHED
+G33-TS2-LOG: Test 0: 5/5 PASSED. Expected = 0x1F, result = 0x1F
+G33-TS2: 1/1 test function(s) COMPLETED.
+G33-TS2: 5/5 tests PASSED.
+G33-TS2: 0/5 tests FAILED.
+G33-TS2: END

@@ -1,0 +1,41 @@
+G33-TS7: START
+G33-TS7-LOG: Test[0]-[0]: enters tasks1 and creates a mail box for itself.
+G33-TS7-LOG: Test[0]-[0]: result = 1.
+G33-TS7-LOG: Test[0]-[1]: task1 tries to register 'Q' to KCD..
+G33-TS7-LOG: Test[0]-[1]: result = 1.
+G33-TS7-LOG: Test[0]-[2]: task1 creates task2.
+G33-TS7-LOG: Test[0]-[2]: result = 1.
+G33-TS7-LOG: Test[0]-[3]: enters tasks2 and creates a mail box for itself.
+G33-TS7-LOG: Test[0]-[3]: result = 1.
+G33-TS7-LOG: Test[0]-[4]: task2 tries to register 'P' to KCD..
+G33-TS7-LOG: Test[0]-[4]: result = 1.
+G33-TS7-LOG: Test[0]-[5]: task1 recieved a message..
+G33-TS7-LOG: Test[0]-[5]: result = 1.
+----hello to task1----
+G33-TS7-LOG: Test[0]-[6]: task1 sends received message to con_display,.
+G33-TS7-LOG: Test[0]-[6]: result = 1.
+G33-TS7-LOG: Test[0]-[7]: task2 recieved first message..
+G33-TS7-LOG: Test[0]-[7]: result = 1.
+----this should go to task2----
+G33-TS7-LOG: Test[0]-[8]: task2 sends first received message to con_display,.
+G33-TS7-LOG: Test[0]-[8]: result = 1.
+G33-TS7-LOG: Test[0]-[9]: task2 tries to register 'Q' (The original cmd for task 1) to KCD..
+G33-TS7-LOG: Test[0]-[9]: result = 1.
+G33-TS7-LOG: Test[0]-[10]: task2 recieved the second message..
+G33-TS7-LOG: Test[0]-[10]: result = 1.
+----'Q' cmd message here----
+G33-TS7-LOG: Test[0]-[11]: task2 sends the second message to con_display,.
+G33-TS7-LOG: Test[0]-[11]: result = 1.
+G33-TS7-LOG: Test[0]-[12]: task2 sends the second message to con_display,.
+G33-TS7-LOG: Test[0]-[12]: result = 1.
+G33-TS7-LOG: Test[0]-[13]: task1 recieved a message..
+G33-TS7-LOG: Test[0]-[13]: result = 1.
+----I'm task2, unblocking task1.----
+G33-TS7-LOG: Test[0]-[14]: task1's previous message should come from task2.
+G33-TS7-LOG: Test[0]-[14]: result = 1.
+G33-TS7: FINISHED
+G33-TS7-LOG: Test 0: 15/15 PASSED. Expected = 0x7FFF, result = 0x7FFF
+G33-TS7: 1/1 test function(s) COMPLETED.
+G33-TS7: 15/15 tests PASSED.
+G33-TS7: 0/15 tests FAILED.
+G33-TS7: END

@@ -1,0 +1,131 @@
+G33-TS6: START
+G33-TS6: TID = 1, task1: entering
+G33-TS6-LOG: Test[0]-[0]: task1: Create mailbox.
+G33-TS6-LOG: Test[0]-[0]: result = 1.
+G33-TS6-LOG: Test[0]-[1]: task1: creating task2.
+G33-TS6-LOG: Test[0]-[1]: result = 1.
+G33-TS6-LOG: TID = 2, task2: entering
+G33-TS6-LOG: Test[0]-[2]: task2: Changing prio of task1 TID(1) to MEDIUM - shoould fail since TID(1) is privileged.
+G33-TS6-LOG: Test[0]-[2]: result = 1.
+G33-TS6-LOG: Test[0]-[3]: task2: Create mailbox.
+G33-TS6-LOG: Test[0]-[3]: result = 1.
+G33-TS6-LOG: Test[0]-[4]: task2: send to task 1 a message that is 4x, fails.
+G33-TS6-LOG: Test[0]-[4]: result = 1.
+G33-TS6-LOG: Test[0]-[5]: task2: send to task 1 a message that is 3x + 1, fails.
+G33-TS6-LOG: Test[0]-[5]: result = 1.
+G33-TS6-LOG: Test[0]-[6]: task2: send to task 1 a message that is 2x, passes.
+G33-TS6-LOG: Test[0]-[6]: result = 1.
+G33-TS6-LOG: TID = 2, task2: yielding to task 1
+G33-TS6-LOG: Test[0]-[7]: task1: Blocking receive from task2 TID(2).
+G33-TS6-LOG: Test[0]-[7]: result = 1.
+G33-TS6-LOG: Test[0]-[8]: task1: Changing prio of task2 TID(2) to MEDIUM.
+G33-TS6-LOG: Test[0]-[8]: result = 1.
+G33-TS6-LOG: Test[0]-[9]: task1: creating task3.
+G33-TS6-LOG: Test[0]-[9]: result = 1.
+G33-TS6-LOG: TID = 1, task1: yielding to task 3
+G33-TS6-LOG: TID = 3, task3: entering
+G33-TS6-LOG: Test[0]-[10]: task3: Blocking send to task2 TID(2) of size 2x.
+G33-TS6-LOG: Test[0]-[10]: result = 1.
+G33-TS6-LOG: Test[0]-[11]: task3: Blocking send to task2 TID(2) of size 2x.
+G33-TS6-LOG: Test[0]-[11]: result = 1.
+G33-TS6-LOG: Test[0]-[12]: task1: yielded to task 3 and now has resumed.
+G33-TS6-LOG: Test[0]-[12]: result = 1.
+G33-TS6-LOG: Test[0]-[13]: task2: yielded to task 1 and has now resumed.
+G33-TS6-LOG: Test[0]-[13]: result = 1.
+G33-TS6-LOG: Test[0]-[14]: task2: Blocking receive 2x, nothing gets popped from the waiting list.
+G33-TS6-LOG: Test[0]-[14]: result = 1.
+G33-TS6-LOG: Test[0]-[15]: task1: Blocking send to task2 TID(2), will not be received and switch to task 2.
+G33-TS6-LOG: Test[0]-[15]: result = 1.
+G33-TS6: TID = 1, task1: resume
+G33-TS6-LOG: Test[0]-[16]: task2: Changing prio of task3 TID(3) to MEDIUM.
+G33-TS6-LOG: Test[0]-[16]: result = 1.
+returning to task 2 after task 1 set its own prio to MEDIUM
+G33-TS6-LOG: Test[0]-[17]: task2: Blocking receive 2x again.
+G33-TS6-LOG: Test[0]-[17]: result = 1.
+G33-TS6-LOG: Test[0]-[18]: task2: Blocking receive x.
+G33-TS6-LOG: Test[0]-[18]: result = 1.
+G33-TS6-LOG: Test[0]-[19]: task2: Blocking receive 4x.
+G33-TS6-LOG: Test[0]-[19]: result = 1.
+G33-TS6-LOG: Test[0]-[20]: task2: Checking mailbox is empty, it should be..
+G33-TS6-LOG: Test[0]-[20]: result = 1.
+G33-TS6-LOG: Test[0]-[21]: task2: Changing prio of task3 TID(3) to LOWEST.
+G33-TS6-LOG: Test[0]-[21]: result = 1.
+G33-TS6-LOG: Test[0]-[22]: task1: Changing prio of itself TID(1) to medium.
+G33-TS6-LOG: Test[0]-[22]: result = 1.
+G33-TS6: TID = 1, task1: exited
+G33-TS6-LOG: Test[0]-[23]: task3: Blocking send to task2 TID(2) of size 4x.
+G33-TS6-LOG: Test[0]-[23]: result = 1.
+G33-TS6-LOG: Test[0]-[24]: task3: Changing prio of itself TID(3) to MEDIUM.
+G33-TS6-LOG: Test[0]-[24]: result = 1.
+G33-TS6-LOG: Test[0]-[25]: task3: creating task4.
+G33-TS6-LOG: Test[0]-[25]: result = 1.
+G33-TS6-LOG: Test[0]-[26]: task3: creating task5.
+G33-TS6-LOG: Test[0]-[26]: result = 1.
+G33-TS6-LOG: Test[0]-[27]: task3: creating task6.
+G33-TS6-LOG: Test[0]-[27]: result = 1.
+G33-TS6-LOG: Test[0]-[28]: task3: creating task7.
+G33-TS6-LOG: Test[0]-[28]: result = 1.
+G33-TS6-LOG: Test[0]-[29]: task3: creating task8.
+G33-TS6-LOG: Test[0]-[29]: result = 1.
+G33-TS6-LOG: Test[0]-[30]: task3: creating task9 SHOULD FAIL.
+G33-TS6-LOG: Test[0]-[30]: result = 1.
+G33-TS6: TID = 3, task3: exited
+G33-TS6-LOG: TID = 1, task4: entering
+G33-TS6-LOG: TID = 3, task9: entering
+G33-TS6-LOG: Test[0]-[31]: task9: Create mailbox.
+G33-TS6-LOG: Test[0]-[31]: result = 1.
+G33-TS6-LOG: Test[0]-[32]: task4: created a new task9 (HIGH), back to task 4 (MEDIUM).
+G33-TS6-LOG: Test[0]-[32]: result = 1.
+G33-TS6-LOG: Test[0]-[33]: task4: Blocking send to task3 TID(3) of size 4x.
+G33-TS6-LOG: Test[0]-[33]: result = 1.
+G33-TS6-LOG: TID = 4, task5: entering
+G33-TS6-LOG: Test[0]-[34]: task5: Changing prio of itself TID(4) to HIGH.
+G33-TS6-LOG: Test[0]-[34]: result = 1.
+G33-TS6-LOG: Test[0]-[35]: task5: Blocking send to task3 TID(3) of size 2x.
+G33-TS6-LOG: Test[0]-[35]: result = 1.
+G33-TS6-LOG: TID = 5, task6: entering
+G33-TS6-LOG: Test[0]-[36]: task6: Blocking send to task2 TID(2) of size 2x.
+G33-TS6-LOG: Test[0]-[36]: result = 1.
+G33-TS6-LOG: Test[0]-[37]: task6: Blocking send to task2 TID(2) of size 3x.
+G33-TS6-LOG: Test[0]-[37]: result = 1.
+G33-TS6-LOG: TID = 6, task7: entering
+G33-TS6-LOG: TID = 7, task8: entering
+G33-TS6-LOG: Test[0]-[38]: task2: Changing prio of itself TID(2) to LOWEST.
+G33-TS6-LOG: Test[0]-[38]: result = 1.
+G33-TS6-LOG: Test[0]-[39]: task2: Changing prio of 5->LOWEST, 7->HIGHEST, 6->HIGHEST.
+G33-TS6-LOG: Test[0]-[39]: result = 1.
+G33-TS6-LOG: Test[0]-[40]: task2: Blocking receive 2x.
+G33-TS6-LOG: Test[0]-[40]: result = 1.
+G33-TS6-LOG: Test[0]-[41]: task8: Blocking send to task2 TID(2) of size 4x.
+G33-TS6-LOG: Test[0]-[41]: result = 1.
+G33-TS6: TID = 7, task8: exited
+G33-TS6-LOG: Test[0]-[42]: task7: Blocking send to task2 TID(2) of size x.
+G33-TS6-LOG: Test[0]-[42]: result = 1.
+G33-TS6: TID = 6, task7: exited
+G33-TS6-LOG: Test[0]-[43]: task2: Blocking receive 3x.
+G33-TS6-LOG: Test[0]-[43]: result = 1.
+G33-TS6-LOG: Test[0]-[44]: task2: Blocking receive 5x, should only receive 4x.
+G33-TS6-LOG: Test[0]-[44]: result = 1.
+G33-TS6-LOG: Test[0]-[45]: task2: Blocking receive x.
+G33-TS6-LOG: Test[0]-[45]: result = 1.
+G33-TS6-LOG: Test[0]-[46]: task2: Blocking receive 2x.
+G33-TS6-LOG: Test[0]-[46]: result = 1.
+G33-TS6-LOG: TID = 2, task2: exited
+G33-TS6-LOG: Test[0]-[47]: task9: Changing prio of itself TID(3) to LOWEST.
+G33-TS6-LOG: Test[0]-[47]: result = 1.
+G33-TS6: TID = 3, task9: exited
+G33-TS6-LOG: Test[0]-[48]: task5: Blocking send to task3 TID(3) of size 2x SHOULD FAIL.
+G33-TS6-LOG: Test[0]-[48]: result = 1.
+G33-TS6: TID = 4, task5: exited
+G33-TS6-LOG: Test[0]-[49]: task4: Blocking send to task3 TID(3) of size 2x + 1 - SHOULD FAIL.
+G33-TS6-LOG: Test[0]-[49]: result = 1.
+G33-TS6: TID = 1, task4: exited
+G33-TS6-LOG: Test[0]-[50]: task6: Blocking send to task2 TID(2) of size 2x.
+G33-TS6-LOG: Test[0]-[50]: result = 1.
+G33-TS6: TID = 5, task6: exited
+G33-TS6: FINISHED
+G33-TS6-LOG: Test 0: 32/32 PASSED. Expected = 0xFFFFFFFF, result = 0xFFFFFFFF
+G33-TS6: 1/1 test function(s) COMPLETED.
+G33-TS6: 32/32 tests PASSED.
+G33-TS6: 0/32 tests FAILED.
+G33-TS6: END
